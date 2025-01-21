@@ -89,6 +89,7 @@ public class ReservationService : IReservationService
         }
 
         user.Balance = user.Balance - reservation.AmountCharged;
+        await _userService.UpdateUser(user);
 
         scooter.IsAvailable = true;
         await _scooterService.UpdateAsync(scooter);

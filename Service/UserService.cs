@@ -1,11 +1,13 @@
 ﻿using Entity.Models;
 using Persistence.Abstracts;
+using Util.Error;
 
 namespace Service
 {
     public interface IUserService
     {
         Task<User?> GetUserByIdAsync(int id);
+        Task<User?> UpdateUser(User user);
         Task<bool> HasSufficientBalanceAsync(int userId);
         Task<List<Reservation>> GetUserReservationsAsync(int userId);
     }
@@ -32,6 +34,13 @@ namespace Service
         {
             User? user = await _userRepository.GetAsync(u => u.Id == userId);
             return user.Reservations;
+        }
+
+        public async Task<User?> UpdateUser(User user)
+        {
+            var u = await _userRepository.GetByIdAsync(user.Id) ?? throw new YapidromException(ErrorCodes.UserNotFound);
+            u.Balance = user.Balance;
+            return u;
         }
     }
 }
