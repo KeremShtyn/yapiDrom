@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{4B7B1422-EAF9-4153-AA90-4F8A82A899D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Repository\Persistence.csproj", "{03D290B7-9F27-4046-BA83-EE6221615920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{FA627461-EAF4-4F72-95AE-135F0D0EFECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{6B87BB8F-972C-438D-9C01-0F8D7A6157B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yapiDrom", "yapiDrom\yapiDrom.csproj", "{E7492C48-2458-4E12-8C8A-F74D1E455357}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B9A8518E-085A-4842-8341-4F616DE14E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YapidromTest", "..\YapidromTest\YapidromTest.csproj", "{7562CA10-5516-4C29-976E-8EC0FCFE7139}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B7B1422-EAF9-4153-AA90-4F8A82A899D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7B1422-EAF9-4153-AA90-4F8A82A899D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7B1422-EAF9-4153-AA90-4F8A82A899D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7B1422-EAF9-4153-AA90-4F8A82A899D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D290B7-9F27-4046-BA83-EE6221615920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D290B7-9F27-4046-BA83-EE6221615920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D290B7-9F27-4046-BA83-EE6221615920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D290B7-9F27-4046-BA83-EE6221615920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA627461-EAF4-4F72-95AE-135F0D0EFECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA627461-EAF4-4F72-95AE-135F0D0EFECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA627461-EAF4-4F72-95AE-135F0D0EFECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA627461-EAF4-4F72-95AE-135F0D0EFECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B87BB8F-972C-438D-9C01-0F8D7A6157B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B87BB8F-972C-438D-9C01-0F8D7A6157B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B87BB8F-972C-438D-9C01-0F8D7A6157B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B87BB8F-972C-438D-9C01-0F8D7A6157B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7492C48-2458-4E12-8C8A-F74D1E455357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7492C48-2458-4E12-8C8A-F74D1E455357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7492C48-2458-4E12-8C8A-F74D1E455357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7492C48-2458-4E12-8C8A-F74D1E455357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A8518E-085A-4842-8341-4F616DE14E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A8518E-085A-4842-8341-4F616DE14E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A8518E-085A-4842-8341-4F616DE14E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A8518E-085A-4842-8341-4F616DE14E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7562CA10-5516-4C29-976E-8EC0FCFE7139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7562CA10-5516-4C29-976E-8EC0FCFE7139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7562CA10-5516-4C29-976E-8EC0FCFE7139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7562CA10-5516-4C29-976E-8EC0FCFE7139}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

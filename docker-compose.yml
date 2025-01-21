@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: yapidrom/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5000
+      - ASPNETCORE_HTTPS_PORTS=5001
+      - DefaultConnection=Host=yapidrom.database;Port=5432;Database=yapidrom;Username=postgres;Password=5303;
+    depends_on:
+      - yapidrom.database 
+
+  yapidrom.database:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=5303
+      - POSTGRES_DB=yapidrom
+    ports:
+      - "5432:5432"
